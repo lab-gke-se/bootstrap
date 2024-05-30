@@ -11,6 +11,8 @@ services:
 - cloudkms.googleapis.com
 - cloudresourcemanager.googleapis.com
 - compute.googleapis.com
+- container.googleapis.com
+- gkeconnect.googleapis.com
 - iam.googleapis.com
 - iamcredentials.googleapis.com
 - iap.googleapis.com
