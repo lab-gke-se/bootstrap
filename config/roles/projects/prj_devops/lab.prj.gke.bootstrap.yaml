@@ -3,6 +3,13 @@ title: Bootstrap Service Account Role
 description: Permissions for bootstrap service account
 stage: GA
 includedPermissions:
+# Resource 
+- orgpolicy.constraints.list
+- orgpolicy.policies.list
+- orgpolicy.policy.get
+- resourcemanager.projects.get
+- resourcemanager.projects.getIamPolicy
+- resourcemanager.projects.setIamPolicy
 # Role Admin - to create custom roles
 - iam.roles.create
 - iam.roles.delete
@@ -1182,7 +1189,6 @@ includedPermissions:
 - recommender.iamPolicyRecommendations.get
 - recommender.iamPolicyRecommendations.list
 - recommender.iamPolicyRecommendations.update
-- resourcemanager.projects.get
 - servicedirectory.namespaces.create
 - servicedirectory.namespaces.delete
 - servicedirectory.services.create

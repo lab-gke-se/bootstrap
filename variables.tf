@@ -1,7 +1,12 @@
-variable "domain" {
-  description = "The domain"
-  type        = string
+variable "organization" {
+  description = "The organization"
+  type        = map(any)
 }
+
+# variable "domain" {
+#   description = "The domain"
+#   type        = string
+# }
 
 variable "billing_account" {
   description = "The billing account"

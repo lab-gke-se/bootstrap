@@ -1,8 +1,8 @@
 # The organization 
-module "organization" {
-  source = "github.com/lab-gke-se/modules//resources/organization"
-  domain = var.domain
-}
+# module "organization" {
+#   source = "github.com/lab-gke-se/modules//resources/organization"
+#   domain = var.domain
+# }
 
 # Only supports folders under oganization to start with
 module "folders" {

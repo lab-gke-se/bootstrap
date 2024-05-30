@@ -1,6 +1,6 @@
 locals {
   # Local lookups for resources
-  organization     = module.organization.organization
+  organization     = var.organization
   folders          = module.folders
   projects         = module.projects
   service_accounts = module.service_accounts
