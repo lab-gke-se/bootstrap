@@ -1,0 +1,4 @@
+name: sa-tenant-gke
+project: prj_devops
+display_name: GKE Tenant Pipeline Service Account
+description: GKE Tenant Pipeline Service Account

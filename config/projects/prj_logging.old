@@ -1,0 +1,25 @@
+parent: fldr_foundations
+display_name: prj-logging
+labels:
+  application_name: bootstrap
+  finance-approver: afins
+  environment: demo
+  env_code: bootstrap
+  pid: '245924'
+  business-owner: tonstand
+  hfm-entity: gb4581
+  primary-technical-contact: davbutla
+  project-code: '245924'
+services:
+- artifactregistry.googleapis.com
+- bigquery.googleapis.com
+- bigquerydatatransfer.googleapis.com # For pricing data feed
+# - bigquerymigration.googleapis.com - dependencies
+# - bigquerystorage.googleapis.com - dependencies
+- cloudkms.googleapis.com
+- compute.googleapis.com
+- logging.googleapis.com
+- monitoring.googleapis.com
+- oslogin.googleapis.com
+- pubsub.googleapis.com
+- storage.googleapis.com

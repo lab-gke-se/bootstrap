@@ -1,0 +1,58 @@
+parent: lab_gke_se
+display_name: lab-gke-se
+services:
+- artifactregistry.googleapis.com
+- bigquery.googleapis.com
+# - bigquerymigration.googleapis.com
+# - bigquerystorage.googleapis.com
+- cloudasset.googleapis.com
+- cloudbilling.googleapis.com
+- cloudfunctions.googleapis.com
+- cloudkms.googleapis.com
+- cloudresourcemanager.googleapis.com
+- compute.googleapis.com
+- iam.googleapis.com
+- iamcredentials.googleapis.com
+- iap.googleapis.com
+- logging.googleapis.com
+- orgpolicy.googleapis.com
+- oslogin.googleapis.com
+- pubsub.googleapis.com
+- serviceusage.googleapis.com
+# - storage-api.googleapis.com
+# - storage-component.googleapis.com
+- storage.googleapis.com
+- sts.googleapis.com
+iam_policy:
+  bindings:
+  - role: prj_devops/lab.prj.gke.bootstrap
+    members: 
+    - serviceAccount:sa_bootstrap
+  - role: prj_devops/lab.prj.gke.foundations
+    members:
+    - serviceAccount:sa_foundations
+  - role: prj_devops/lab.prj.gke.terraform
+    members:
+    - serviceAccount:sa_bootstrap
+    - serviceAccount:sa_development
+    - serviceAccount:sa_foundations
+    - serviceAccount:sa_tenant_gke
+
+
+  # Roles not supported in custom roles - also not supported at project level
+  # - role: roles/iam.denyAdmin
+  #   members:
+  #   - serviceAccount:sa_foundations
+  # - role: roles/orgpolicy.policyAdmin
+  #   members:
+  #   - serviceAccount:sa_foundations
+  #   - serviceAccount:sa_guardrails_orgpolicy
+  # - role: roles/compute.xpnAdmin
+  #   members:
+  #   - serviceAccount:sa_development
+
+  # Demo Roles
+  # - role: roles/iam.organizationRoleAdmin
+  #   members:
+  #   - group:org-admins@capileus.com
+

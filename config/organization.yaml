@@ -1,0 +1,5 @@
+displayName: ${domain}
+name: ${org_id}
+lifecycleState: active
+owner:
+  directoryCustomerId: ${customer_id}

@@ -1,0 +1,11 @@
+name: lab.prj.gke.foundations
+title: Foundations Service Account Role
+description: Permissions for foundations service account
+stage: GA
+includedPermissions:
+# Log Sink Admin
+- logging.sinks.create
+- logging.sinks.delete
+- logging.sinks.get
+- logging.sinks.list
+- logging.sinks.update

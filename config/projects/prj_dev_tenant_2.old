@@ -1,0 +1,37 @@
+parent: fldr_development
+display_name: prj-dev-tenant-2
+labels:
+  application_name: demo
+  finance-approver: afins
+  environment: demo
+  env_code: development
+  pid: '245924'
+  business-owner: tonstand
+  hfm-entity: gb4581
+  primary-technical-contact: davbutla
+  project-code: '245924'
+services:
+- anthos.googleapis.com
+- cloudkms.googleapis.com
+- cloudresourcemanager.googleapis.com
+- cloudtrace.googleapis.com
+- compute.googleapis.com
+- container.googleapis.com
+- gkeconnect.googleapis.com
+- gkehub.googleapis.com
+- iam.googleapis.com
+- iamcredentials.googleapis.com
+- logging.googleapis.com
+- meshca.googleapis.com
+- meshconfig.googleapis.com
+- meshtelemetry.googleapis.com
+- monitoring.googleapis.com 
+- oslogin.googleapis.com
+- serviceusage.googleapis.com
+- certificatemanager.googleapis.com
+iam_policy:
+  bindings:
+  - role: roles/owner
+    members: 
+    - serviceAccount:sa_tenant_2
+

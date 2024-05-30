@@ -1,0 +1,28 @@
+parent: fldr_foundations
+display_name: prj-guardrails
+labels:
+  application_name: bootstrap
+  finance-approver: afins
+  environment: demo
+  env_code: bootstrap
+  pid: '245924'
+  business-owner: tonstand
+  hfm-entity: gb4581
+  primary-technical-contact: davbutla
+  project-code: '245924'
+services:
+- artifactregistry.googleapis.com
+- cloudbuild.googleapis.com
+- cloudfunctions.googleapis.com
+- cloudkms.googleapis.com
+- compute.googleapis.com
+# - containerregistry.googleapis.com
+- logging.googleapis.com
+- orgpolicy.googleapis.com
+- oslogin.googleapis.com
+- pubsub.googleapis.com
+# - storage-api.googleapis.com
+# - storage-component.googleapis.com
+- storage.googleapis.com
+# - for alert outputs - move to logging
+- bigquery.googleapis.com

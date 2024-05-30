@@ -1,0 +1,10 @@
+name: lab.prj.gke.wifUser
+title: Workload Identity Federatoion User
+description: The permissions required on service accounts for workload identity
+  pools
+includedPermissions:
+- iam.serviceAccounts.get
+- iam.serviceAccounts.getAccessToken
+- iam.serviceAccounts.getOpenIdToken
+- iam.serviceAccounts.list
+stage: GA

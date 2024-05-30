@@ -1,0 +1,20 @@
+parent: fldr_development
+display_name: prj-dev-network
+labels:
+  application_name: demo
+  finance-approver: afins
+  environment: demo
+  env_code: development
+  pid: '245924'
+  business-owner: tonstand
+  hfm-entity: gb4581
+  primary-technical-contact: davbutla
+  project-code: '245924'
+services:
+- cloudkms.googleapis.com
+- cloudresourcemanager.googleapis.com
+- compute.googleapis.com
+- logging.googleapis.com
+- oslogin.googleapis.com
+- serviceusage.googleapis.com
+- container.googleapis.com

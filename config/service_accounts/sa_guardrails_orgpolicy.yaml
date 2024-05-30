@@ -1,0 +1,4 @@
+name: sa-guardrail-orgpolicy
+project: prj_devops
+display_name: Guardrail Service Account - orgpolicy
+description: Service Account for orgpolicy guardrail
