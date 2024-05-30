@@ -33,6 +33,9 @@ iam_policy:
   - role: prj_devops/lab.prj.gke.foundations
     members:
     - serviceAccount:sa_foundations
+  - role: prj_devops/lab.prj.gke.development
+    members:
+    - serviceAccount:sa_development
   - role: prj_devops/lab.prj.gke.terraform
     members:
     - serviceAccount:sa_bootstrap
