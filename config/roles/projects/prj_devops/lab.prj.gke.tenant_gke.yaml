@@ -5,6 +5,8 @@ stage: GA
 includedPermissions:
 # odds 
 - resourcemanager.projects.get
+- resourcemanager.projects.getIamPolicy
+- resourcemanager.projects.setIamPolicy
 - firebase.projects.get
 - orgpolicy.policy.get
 # roles/artifactregistry.admin
