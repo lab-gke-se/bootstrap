@@ -1382,6 +1382,8 @@ includedPermissions:
 - iam.serviceAccounts.setIamPolicy
 - iam.serviceAccounts.undelete
 - iam.serviceAccounts.update
+# roles/iam.serviceAccountuser
+- iam.serviceAccounts.actAs
 # roles/serviceusage.serviceUsageAdmin
 - monitoring.timeSeries.list
 - serviceusage.quotas.get
