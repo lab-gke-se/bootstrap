@@ -539,14 +539,14 @@ includedPermissions:
 - compute.nodeTemplates.setIamPolicy
 - compute.nodeTypes.get
 - compute.nodeTypes.list
-- compute.organizations.administerXpn
-- compute.organizations.disableXpnHost
-- compute.organizations.disableXpnResource
-- compute.organizations.enableXpnHost
-- compute.organizations.enableXpnResource
-- compute.organizations.listAssociations
-- compute.organizations.setFirewallPolicy
-- compute.organizations.setSecurityPolicy
+# - compute.organizations.administerXpn
+# - compute.organizations.disableXpnHost
+# - compute.organizations.disableXpnResource
+# - compute.organizations.enableXpnHost
+# - compute.organizations.enableXpnResource
+# - compute.organizations.listAssociations
+# - compute.organizations.setFirewallPolicy
+# - compute.organizations.setSecurityPolicy
 - compute.oslogin.updateExternalUser
 - compute.packetMirrorings.create
 - compute.packetMirrorings.delete
