@@ -54,8 +54,8 @@ includedPermissions:
 - artifactregistry.versions.list
 - artifactregistry.yumartifacts.create
 # roles/cloudkms.admin
-- cloudkms.autokeyConfigs.get
-- cloudkms.autokeyConfigs.update
+# - cloudkms.autokeyConfigs.get
+# - cloudkms.autokeyConfigs.update
 - cloudkms.cryptoKeyVersions.create
 - cloudkms.cryptoKeyVersions.destroy
 - cloudkms.cryptoKeyVersions.get
