@@ -14,7 +14,7 @@ module "kms_key" {
   name     = "${local.projects["prj_devops"].name}-key"
   project  = local.projects["prj_devops"].project_id
   key_ring = module.kms_key_ring.id
-  services = ["storage.googleapis.com"]
+  services = ["storage.googleapis.com", "container.googleapis.com", "compute.googleapis.com"]
 
   depends_on = [local.projects]
 }
