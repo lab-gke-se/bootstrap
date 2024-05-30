@@ -185,23 +185,23 @@ includedPermissions:
 - compute.externalVpnGateways.list
 - compute.externalVpnGateways.setLabels
 - compute.externalVpnGateways.use
-- compute.firewallPolicies.addAssociation
-- compute.firewallPolicies.cloneRules
-- compute.firewallPolicies.copyRules
-- compute.firewallPolicies.create
-- compute.firewallPolicies.createTagBinding
-- compute.firewallPolicies.delete
-- compute.firewallPolicies.deleteTagBinding
-- compute.firewallPolicies.get
-- compute.firewallPolicies.getIamPolicy
-- compute.firewallPolicies.list
-- compute.firewallPolicies.listEffectiveTags
-- compute.firewallPolicies.listTagBindings
-- compute.firewallPolicies.move
-- compute.firewallPolicies.removeAssociation
-- compute.firewallPolicies.setIamPolicy
-- compute.firewallPolicies.update
-- compute.firewallPolicies.use
+# - compute.firewallPolicies.addAssociation
+# - compute.firewallPolicies.cloneRules
+# - compute.firewallPolicies.copyRules
+# - compute.firewallPolicies.create
+# - compute.firewallPolicies.createTagBinding
+# - compute.firewallPolicies.delete
+# - compute.firewallPolicies.deleteTagBinding
+# - compute.firewallPolicies.get
+# - compute.firewallPolicies.getIamPolicy
+# - compute.firewallPolicies.list
+# - compute.firewallPolicies.listEffectiveTags
+# - compute.firewallPolicies.listTagBindings
+# - compute.firewallPolicies.move
+# - compute.firewallPolicies.removeAssociation
+# - compute.firewallPolicies.setIamPolicy
+# - compute.firewallPolicies.update
+# - compute.firewallPolicies.use
 - compute.firewalls.create
 - compute.firewalls.createTagBinding
 - compute.firewalls.delete
