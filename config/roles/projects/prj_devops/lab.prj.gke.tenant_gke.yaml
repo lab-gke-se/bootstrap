@@ -547,7 +547,7 @@ includedPermissions:
 # - compute.organizations.listAssociations
 # - compute.organizations.setFirewallPolicy
 # - compute.organizations.setSecurityPolicy
-- compute.oslogin.updateExternalUser
+# - compute.oslogin.updateExternalUser
 - compute.packetMirrorings.create
 - compute.packetMirrorings.delete
 - compute.packetMirrorings.get
