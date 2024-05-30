@@ -1506,7 +1506,7 @@ includedPermissions:
 - monitoring.uptimeCheckConfigs.update
 - opsconfigmonitoring.resourceMetadata.list
 - opsconfigmonitoring.resourceMetadata.write
-- stackdriver.projects.edit
+# - stackdriver.projects.edit
 - stackdriver.projects.get
 - stackdriver.resourceMetadata.list
 - stackdriver.resourceMetadata.write
