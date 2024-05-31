@@ -34,7 +34,7 @@ resource "google_iam_workload_identity_pool_provider" "github" {
 # Bind custom role for workload identity users
 module "sa_wip_iam_binding_github" {
   for_each           = var.github_repos
-  source             = "github.com/lab-gke-se/modules//iam/binding/service_account"
+  source             = "github.com/lab-gke-se/modules//iam/binding/service_account?ref=0.0.1"
   service_account_id = module.service_accounts[each.value].id
   role               = module.prj_roles["prj_devops/lab.prj.gke.wifUser"].id
   members = [

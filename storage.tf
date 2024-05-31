@@ -1,5 +1,5 @@
 module "storage" {
-  source = "github.com/lab-gke-se/modules//storage/bucket"
+  source = "github.com/lab-gke-se/modules//storage/bucket?ref=0.0.1"
 
   name                = "tf-state"
   project             = local.projects["prj_devops"].project_id
