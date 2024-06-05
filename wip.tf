@@ -38,9 +38,9 @@ module "sa_wip_iam_binding_github" {
   service_account_id = module.service_accounts[each.value].id
   role               = module.prj_roles["prj_devops/lab.prj.gke.wifUser"].id
   members = [
-    each.key == "tenant_gke" ? "principalSet://iam.googleapis.com/${google_iam_workload_identity_pool.github.name}/subject/repo:lab-gke-se/bootstrap:ref:refs/head/main" : "principalSet://iam.googleapis.com/${google_iam_workload_identity_pool.github.name}/*"
+    each.key == "tenant_gke" ? "principalSet://iam.googleapis.com/${google_iam_workload_identity_pool.github.name}/subject/repo:lab-gke-se/bootstrap:ref:refs/heads/main" : "principalSet://iam.googleapis.com/${google_iam_workload_identity_pool.github.name}/*"
     # principalSet://iam.googleapis.com/projects/52991355109/locations/global/workloadIdentityPools/github-pool/subject/repo:lab-gke-se/bootstrap:ref:refs/heads/main
-    # principalSet://iam.googleapis.com/projects/52991355109/locations/global/workloadIdentityPools/github-pool/subject/repo:lab-gke-se/tenant_gke:ref:refs/head/main
+    # principalSet://iam.googleapis.com/projects/52991355109/locations/global/workloadIdentityPools/github-pool/subject/repo:lab-gke-se/bootstrap:ref:refs/heads/main
   ]
 
   depends_on = [google_iam_workload_identity_pool_provider.github, google_project_iam_binding.binding]
