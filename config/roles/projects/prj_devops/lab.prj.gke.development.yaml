@@ -886,7 +886,6 @@ includedPermissions:
 - compute.securityPolicies.list
 - compute.securityPolicies.listEffectiveTags
 - compute.securityPolicies.listTagBindings
-- compute.securityPolicies.move
 - compute.securityPolicies.removeAssociation
 - compute.securityPolicies.setIamPolicy
 - compute.securityPolicies.setLabels
