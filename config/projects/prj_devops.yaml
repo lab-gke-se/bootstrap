@@ -20,6 +20,8 @@ services:
 - orgpolicy.googleapis.com
 - oslogin.googleapis.com
 - pubsub.googleapis.com
+- secretmanager.googleapis.com
+- certificatemanager.googleapis.com
 - serviceusage.googleapis.com
 # - storage-api.googleapis.com
 # - storage-component.googleapis.com
