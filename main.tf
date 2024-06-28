@@ -34,7 +34,7 @@ module "service_accounts" {
 
 module "org_roles" {
   for_each    = local.org_role_files
-  source      = "github.com/lab-gke-se/modules//iam/role/organization?ref=0.0.1"
+  source      = "github.com/lab-gke-se/modules//iam/role/organization?ref=main"
   org_id      = local.organization.org_id
   role_id     = each.value.name
   title       = each.value.title
@@ -45,7 +45,7 @@ module "org_roles" {
 
 module "prj_roles" {
   for_each    = local.prj_role_files
-  source      = "github.com/lab-gke-se/modules//iam/role/project?ref=0.0.1"
+  source      = "github.com/lab-gke-se/modules//iam/role/project?ref=main"
   project     = local.projects[regex(local.regex_role, each.key).project].project_id
   role_id     = each.value.name
   title       = each.value.title
