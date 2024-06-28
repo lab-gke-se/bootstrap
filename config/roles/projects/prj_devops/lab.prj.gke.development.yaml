@@ -776,7 +776,7 @@ includedPermissions:
 - compute.backendServices.list
 - compute.firewallPolicies.addAssociation
 - compute.firewallPolicies.cloneRules
-- compute.firewallPolicies.copyRules
+# - compute.firewallPolicies.copyRules
 - compute.firewallPolicies.create
 - compute.firewallPolicies.createTagBinding
 - compute.firewallPolicies.delete
