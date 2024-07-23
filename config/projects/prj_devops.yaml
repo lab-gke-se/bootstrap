@@ -22,6 +22,7 @@ services:
 - pubsub.googleapis.com
 - secretmanager.googleapis.com
 - certificatemanager.googleapis.com
+- secretmanagaer.googleapis.com
 - serviceusage.googleapis.com
 # - storage-api.googleapis.com
 # - storage-component.googleapis.com
