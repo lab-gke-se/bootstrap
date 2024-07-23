@@ -1518,19 +1518,19 @@ includedPermissions:
 # computeNetworkUser - covered by compute.admin
 
 # secretmanager.admin
-secretmanager.locations.get
-secretmanager.locations.list
-secretmanager.secrets.create
-secretmanager.secrets.delete
-secretmanager.secrets.get
-secretmanager.secrets.getIamPolicy
-secretmanager.secrets.list
-secretmanager.secrets.setIamPolicy
-secretmanager.secrets.update
-secretmanager.versions.access
-secretmanager.versions.add
-secretmanager.versions.destroy
-secretmanager.versions.disable
-secretmanager.versions.enable
-secretmanager.versions.get
-secretmanager.versions.list
+- secretmanager.locations.get
+- secretmanager.locations.list
+- secretmanager.secrets.create
+- secretmanager.secrets.delete
+- secretmanager.secrets.get
+- secretmanager.secrets.getIamPolicy
+- secretmanager.secrets.list
+- secretmanager.secrets.setIamPolicy
+- secretmanager.secrets.update
+- secretmanager.versions.access
+- secretmanager.versions.add
+- secretmanager.versions.destroy
+- secretmanager.versions.disable
+- secretmanager.versions.enable
+- secretmanager.versions.get
+- secretmanager.versions.list
