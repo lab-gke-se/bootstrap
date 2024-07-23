@@ -5,6 +5,7 @@ services:
 - bigquery.googleapis.com
 # - bigquerymigration.googleapis.com
 # - bigquerystorage.googleapis.com
+- certificatemanager.googleapis.com
 - cloudasset.googleapis.com
 - cloudbilling.googleapis.com
 - cloudfunctions.googleapis.com
@@ -21,8 +22,6 @@ services:
 - oslogin.googleapis.com
 - pubsub.googleapis.com
 - secretmanager.googleapis.com
-- certificatemanager.googleapis.com
-- secretmanagaer.googleapis.com
 - serviceusage.googleapis.com
 # - storage-api.googleapis.com
 # - storage-component.googleapis.com
