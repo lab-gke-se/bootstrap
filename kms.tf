@@ -28,7 +28,7 @@ module "hpc_1_kms_key_ring" {
 
   name     = "hpc-1"
   project  = local.projects["prj_devops"].project_id
-  location = var.location
+  location = "us-east4"
 
   depends_on = [local.projects]
 }
