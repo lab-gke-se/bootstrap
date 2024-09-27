@@ -20,8 +20,8 @@ services:
 - iap.googleapis.com
 - logging.googleapis.com
 - orgpolicy.googleapis.com
-- oslogin.googleapis.com
-# - parallelstore.googleapis.com
+- oslogin.googleapis.com 
+- parallelstore.googleapis.com
 - pubsub.googleapis.com
 - secretmanager.googleapis.com
 - servicenetworking.googleapis.com

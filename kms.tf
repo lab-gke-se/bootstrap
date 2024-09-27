@@ -52,3 +52,32 @@ module "hpc_1_kms_key" {
   depends_on = [local.projects]
 }
 
+module "hpc_1_kms_key_ring_2" {
+  source = "github.com/lab-gke-se/modules//kms/key_ring?ref=0.0.1"
+
+  name     = "hpc-1-us-central1"
+  project  = local.projects["prj_devops"].project_id
+  location = "us-central1"
+
+  depends_on = [local.projects]
+}
+
+module "hpc_1_kms_key_2" {
+  source = "github.com/lab-gke-se/modules//kms/key?ref=0.0.1"
+
+  name     = "hpc-1-us-central1"
+  project  = local.projects["prj_devops"].project_id
+  key_ring = module.hpc_1_kms_key_ring_2.id
+  services = [
+    "artifactregistry.googleapis.com",
+    "cloudfunctions.googleapis.com",
+    "container.googleapis.com",
+    "pubsub.googleapis.com",
+    "storage.googleapis.com",
+    "compute.googleapis.com",
+    "secretmanager.googleapis.com"
+  ]
+
+  depends_on = [local.projects]
+}
+
