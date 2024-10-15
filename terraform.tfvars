@@ -11,8 +11,9 @@ billing_account = "UNKNOWN"
 location = "europe-west2"
 
 github_repos = {
-  bootstrap   = "sa_bootstrap"
-  foundations = "sa_foundations"
-  development = "sa_development"
-  tenant_gke  = "sa_tenant_gke"
+  bootstrap    = "sa_bootstrap"
+  foundations  = "sa_foundations"
+  development  = "sa_development"
+  tenant_gke   = "sa_tenant_gke"
+  tenant-hpc-1 = "sa_tenant_gke"
 }
